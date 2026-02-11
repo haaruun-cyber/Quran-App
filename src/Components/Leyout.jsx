@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, BarChart2, MessageSquare, Home, Menu, X } from 'lucide-react';
+import { BookOpen, BarChart2, MessageSquare, Home, Menu, X, Dot, CirclePile } from 'lucide-react';
 
 const Leyout = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -9,6 +9,7 @@ const Leyout = ({ children }) => {
   const navItems = [
     { icon: <Home size={20} />, label: 'Dashboard', path: '/' },
     { icon: <BookOpen size={20} />, label: 'Read Quran', path: '/reader/1' },
+    { icon: <CirclePile  size={20} />, label: 'Tasbih', path: '/Tasbih' },
   ];
 
   return (
